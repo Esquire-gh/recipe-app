@@ -22,4 +22,10 @@ export class RecipeListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNewRecipe(){
+    this.recipes.push(
+      new Recipe("Fufu", "recipe for fufu", "https://www.telegraph.co.uk/content/dam/food-and-drink/2019/01/11/TELEMMGLPICT000185036503_trans_NvBQzQNjv4Bq8m3xuhMyFOjUOkuEnTdW-M-bhHwB87o-r13mliye62g.jpeg?imwidth=1400"),
+    )
+  }
+
 }
