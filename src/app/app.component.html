@@ -1,7 +1,29 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      <h2>I'm working!</h2>
-    </div>
+      <!-- Header -->
+      <div class="row">
+        <app-header></app-header>
+      </div>
+      
+      <!-- Recipe Sction -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <app-recipe-list></app-recipe-list>
+          </div>
+          <div class="col-md-7">
+            <app-recipe-detail></app-recipe-detail>
+          </div>
+        </div>
+
+        <app-shopping-list-edit></app-shopping-list-edit>
+  
+        <!-- Shopping list section -->
+        <div class="row">
+          <div class="col-md-12">
+            <app-shopping-list></app-shopping-list>
+          </div>
+        </div>
+      </div>
   </div>
 </div>

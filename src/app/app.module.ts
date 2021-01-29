@@ -7,9 +7,9 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
-import { ReceipeListComponent } from './recipe-book/receipe-list/receipe-list.component';
-import { ReceipeItemComponent } from './recipe-book/receipe-item/receipe-item.component';
-import { ReceipeDetailComponent } from './recipe-book/receipe-detail/receipe-detail.component';
+import { RecipeListComponent } from './recipe-book/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipe-book/recipe-item/recipe-item.component';
+import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail.component';
 
 
 @NgModule({
@@ -19,9 +19,9 @@ import { ReceipeDetailComponent } from './recipe-book/receipe-detail/receipe-det
     FooterComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
-    ReceipeListComponent,
-    ReceipeItemComponent,
-    ReceipeDetailComponent,
+    RecipeDetailComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
   ],
   imports: [
     BrowserModule,

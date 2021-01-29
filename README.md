@@ -1,6 +1,6 @@
 # RecipeApp
 
-This project is built with Angular v.
+This project is built with Angular.
 
 ## Development server
 
