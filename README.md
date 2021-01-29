@@ -1,6 +1,6 @@
-# MyFirstApp
+# RecipeApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+This project is built with Angular v.
 
 ## Development server
 
