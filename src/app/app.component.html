@@ -2,28 +2,15 @@
   <div class="row">
       <!-- Header -->
       <div class="row">
-        <app-header></app-header>
+        <app-header (featureSelect) ="showFeature($event)"></app-header>
       </div>
-      
-      <!-- Recipe Sction -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <app-recipe-list></app-recipe-list>
-          </div>
-          <div class="col-md-7">
-            <app-recipe-detail></app-recipe-detail>
-          </div>
-        </div>
 
-        <app-shopping-list-edit></app-shopping-list-edit>
+      <div class="container">
+        <!-- Recipe Sction -->
+        <app-recipe-book *ngIf="showRecipeBook"></app-recipe-book>
   
         <!-- Shopping list section -->
-        <div class="row">
-          <div class="col-md-12">
-            <app-shopping-list></app-shopping-list>
-          </div>
-        </div>
+        <app-shopping-list *ngIf="showShoppingList"></app-shopping-list>
       </div>
   </div>
 </div>
