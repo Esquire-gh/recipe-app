@@ -1,3 +1,4 @@
+import { EventHandlerVars } from "@angular/compiler/src/compiler_util/expression_converter";
 import { Directive, ElementRef, HostBinding, HostListener, Renderer2 } from "@angular/core";
 
 @Directive({
@@ -9,7 +10,7 @@ export class DropdownDirective {
 
     }
     
-    @HostListener('click', ['$event']) onClick(eventData: Event) {
-        this.isOpen = !this.isOpen;
+    @HostListener('document:click', ['$event']) onClick(eventData: Event) {
+        this.isOpen = this._elementRef.nativeElement.contains(eventData.target) ? !this.isOpen : false;
     }
 }
